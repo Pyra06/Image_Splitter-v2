@@ -1,0 +1,1771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0F8D4"
+    tools:context=".SplitImageActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HORIZONTAL"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="136dp"
+        android:layout_height="44dp"
+        android:rotation="270"
+        android:text="VERTICAL"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout2x2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SPLITTED IMAGE"
+        android:textColor="#D326B8"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+
+
+    <TextView
+        android:id="@+id/textViewHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2x2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/textViewVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:rotation="270"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout2x2"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/backBtn1x2"
+        android:layout_width="136dp"
+        android:layout_height="52dp"
+        android:text=" back"
+        android:textColor="#D326B8"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2x2"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit1"
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit2"
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:scaleType="fitCenter" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit3"
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit4"
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:scaleType="fitCenter" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout3x2"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit5"
+                android:layout_width="76dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit6"
+                android:layout_width="76dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit7"
+                android:layout_width="76dp"
+                android:layout_height="117dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit8"
+                android:layout_width="76dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit9"
+                android:layout_width="76dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit10"
+                android:layout_width="76dp"
+                android:layout_height="117dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2x3"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit11"
+                android:layout_width="117dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit12"
+                android:layout_width="117dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit13"
+                android:layout_width="117dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit14"
+                android:layout_width="117dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit15"
+                android:layout_width="117dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit16"
+                android:layout_width="117dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout4x2"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit17"
+                android:layout_width="55.5dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit18"
+                android:layout_width="55.5dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit19"
+                android:layout_width="55.5dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit20"
+                android:layout_width="55.5dp"
+                android:layout_height="117dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit21"
+                android:layout_width="55.5dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit22"
+                android:layout_width="55.5dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit23"
+                android:layout_width="55.5dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit24"
+                android:layout_width="55.5dp"
+                android:layout_height="117dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2x4"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit25"
+                android:layout_width="117dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit26"
+                android:layout_width="117dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit27"
+                android:layout_width="117dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit28"
+                android:layout_width="117dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit29"
+                android:layout_width="117dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit30"
+                android:layout_width="117dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit31"
+                android:layout_width="117dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit32"
+                android:layout_width="117dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout5x2"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit33"
+                android:layout_width="43.2dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit34"
+                android:layout_width="43.2dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit35"
+                android:layout_width="43.2dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit36"
+                android:layout_width="43.2dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit37"
+                android:layout_width="43.2dp"
+                android:layout_height="117dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit38"
+                android:layout_width="43.2dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit39"
+                android:layout_width="43.2dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit40"
+                android:layout_width="43.2dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit41"
+                android:layout_width="43.2dp"
+                android:layout_height="117dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit42"
+                android:layout_width="43.2dp"
+                android:layout_height="117dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2x5"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit43"
+                android:layout_width="117dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit44"
+                android:layout_width="117dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit45"
+                android:layout_width="117dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit46"
+                android:layout_width="117dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit47"
+                android:layout_width="117dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit48"
+                android:layout_width="117dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit49"
+                android:layout_width="117dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit50"
+                android:layout_width="117dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit51"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit52"
+                android:layout_width="117dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout3x3"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit53"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit54"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit55"
+                android:layout_width="76dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit56"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit57"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit58"
+                android:layout_width="76dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit59"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit60"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit61"
+                android:layout_width="76dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout4x4"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit62"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit63"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit64"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit65"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit66"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit67"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit68"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit69"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit70"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit71"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit72"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit73"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit74"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit75"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit76"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit77"
+                android:layout_width="55.5dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout5x5"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit78"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit79"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit80"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit81"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit82"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit83"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit84"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit85"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit86"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit87"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit88"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit89"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit90"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit91"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit92"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit93"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit94"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit95"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit96"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit97"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit98"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit99"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit100"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit101"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit102"
+                android:layout_width="43.2dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout3x4"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit103"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit104"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit105"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit106"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit107"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit108"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit109"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit110"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit111"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit112"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit113"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit114"
+                android:layout_width="76dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout4x3"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit115"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit116"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit117"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit118"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit119"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit120"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit121"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit122"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit123"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit124"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit125"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit126"
+                android:layout_width="55.5dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout3x5"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit127"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit128"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit129"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit130"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit131"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit132"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit133"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit134"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit135"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit136"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit137"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit138"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit139"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit140"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit141"
+                android:layout_width="76dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout5x3"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit142"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit143"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit144"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit145"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit146"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit147"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit148"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit149"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit150"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit151"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit152"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit153"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit154"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit155"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit156"
+                android:layout_width="43.2dp"
+                android:layout_height="76dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout4x5"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit157"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit158"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit159"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit160"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit161"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit162"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit163"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit164"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit165"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit166"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit167"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit168"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit169"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit170"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit171"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit172"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit173"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit174"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit175"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit176"
+                android:layout_width="55.5dp"
+                android:layout_height="43.2dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout5x4"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit177"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit178"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit179"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit180"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit181"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit182"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit183"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit184"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit185"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit186"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit187"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit188"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit189"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit190"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit191"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplit192"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit193"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit194"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit195"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp"
+                android:layout_marginEnd="6dp" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplit196"
+                android:layout_width="43.2dp"
+                android:layout_height="55.5dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

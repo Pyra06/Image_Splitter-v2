@@ -1,0 +1,2 @@
+rootProject.name='ImageSplitter(V.2)'
+include ':app'
